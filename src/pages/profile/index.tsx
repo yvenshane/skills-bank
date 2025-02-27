@@ -47,7 +47,7 @@ export default function Profile() {
       {/* 功能入口 */}
       <View className='feature-list'>
         <View className='feature-item' onClick={() => navigateTo({ url: '/pages/order/list' })}>我的订单</View>
-        <View className='feature-item'>收到的评价</View>
+        <View className='feature-item' onClick={() => navigateTo({ url: '/pages/review/index' })}>收到的评价</View>
         <View className='feature-item'>积分明细</View>
         <View className='feature-item'>设置</View>
       </View>
