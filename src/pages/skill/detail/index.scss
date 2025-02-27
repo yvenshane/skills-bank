@@ -1,0 +1,188 @@
+$primary-color: #1677ff;
+$text-color: #333;
+$border-color: #eee;
+
+.skill-detail {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+
+  .skill-info {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        color: $text-color;
+      }
+
+      .price {
+        font-size: 18px;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+
+    .category {
+      display: inline-block;
+      padding: 4px 12px;
+      background-color: #f0f7ff;
+      color: $primary-color;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: $text-color;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+  }
+
+  .provider-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    .provider-header {
+      .provider-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        .meta {
+          .nickname {
+            font-size: 16px;
+            font-weight: bold;
+            color: $text-color;
+            margin-bottom: 4px;
+          }
+
+          .stats {
+            display: flex;
+            gap: 16px;
+            font-size: 14px;
+            color: #666;
+
+            .rating, .order-count {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reviews-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 80px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $text-color;
+      margin-bottom: 16px;
+    }
+
+    .reviews-list {
+      .review-item {
+        padding: 16px 0;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .review-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12px;
+
+          .user-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .avatar {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+            }
+
+            .nickname {
+              font-size: 14px;
+              color: $text-color;
+            }
+          }
+
+          .rating {
+            font-size: 14px;
+            color: $primary-color;
+          }
+        }
+
+        .content {
+          font-size: 14px;
+          color: $text-color;
+          line-height: 1.5;
+          margin-bottom: 8px;
+        }
+
+        .time {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: flex-end;
+
+    .order-btn {
+      width: 120px;
+      height: 40px;
+      background-color: $primary-color;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+}
